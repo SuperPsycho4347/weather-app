@@ -30,10 +30,14 @@ function displayData(weatherObject) {
     // Description element creation
     const descripP = document.createElement('p');
     descripP.textContent = weatherObject.weatherDescrip;
+    // Feels like element creation
+    const feelsP = document.createElement('p');
+    feelsP.textContent = weatherObject.weatherFeel;
     // Appending to parent div
     weatherCard.appendChild(locH3)
     weatherCard.appendChild(tempH1);
     weatherCard.appendChild(descripP);
+    weatherCard.appendChild(feelsP);
 }
 
 // Constructor for usableData object
@@ -51,4 +55,6 @@ function usableData(address, description, feel, temp) {
 submitBtn.addEventListener('click', () => {
     const searchLocation = searchBar.value;
     fetchWeather(searchLocation);
+    submitBtn.disabled = true;
 })
+
