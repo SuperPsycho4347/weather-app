@@ -1,6 +1,7 @@
 // Variable declarations
 const searchBar = document.querySelector('.search');
 const submitBtn = document.querySelector('.submit');
+const convertBtn = document.querySelector('.convert');
 const weatherCard = document.querySelector('.weather-card');
 
 // Function to fetch weather through API
@@ -26,13 +27,13 @@ function displayData(weatherObject) {
     locH3.textContent = location;
     // Temp element creation
     const tempH1 = document.createElement('h1');
-    tempH1.textContent = weatherObject.weatherTemp;
+    tempH1.textContent = weatherObject.weatherTemp + " °F";
     // Description element creation
     const descripP = document.createElement('p');
     descripP.textContent = weatherObject.weatherDescrip;
     // Feels like element creation
     const feelsP = document.createElement('p');
-    feelsP.textContent = weatherObject.weatherFeel;
+    feelsP.textContent = "Feels like " + weatherObject.weatherFeel + " °F";
     // Appending to parent div
     weatherCard.appendChild(locH3)
     weatherCard.appendChild(tempH1);
@@ -57,4 +58,3 @@ submitBtn.addEventListener('click', () => {
     fetchWeather(searchLocation);
     submitBtn.disabled = true;
 })
-
