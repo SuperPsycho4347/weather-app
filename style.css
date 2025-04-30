@@ -21,14 +21,17 @@ body {
     padding: 0.5rem;
     border-radius: 20px;
     border: solid black 1px;
+    font-size: large;
 }
 
 .submit {
     height: 2rem;
-    width: 70px;
+    width: 90px;
     border-radius: 20px;
     border: solid 1px black;
     background-color: white;
+    color: black;
+    font-size: large;
 }
 
 .weather-card {
@@ -37,7 +40,7 @@ body {
     align-items: center;
     padding: 1.5rem;
     border-radius: 20px;
-    border: 1px solid;
+    /* border: 1px solid; */
     flex-wrap: wrap;
     text-wrap: wrap;
 }

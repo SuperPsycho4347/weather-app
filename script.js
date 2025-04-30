@@ -45,6 +45,7 @@ function displayData(weatherObject) {
     weatherCard.appendChild(feelsP);
     // Applying color to parent div
     weatherCard.style.backgroundColor = 'white'
+    weatherCard.style.border = 'black 1px solid'
 }
 
 // Constructor for usableData object
