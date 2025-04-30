@@ -4,7 +4,8 @@ body {
     align-items: center;
     background-image: url("/img/pexels-pixabay-209831.jpg");
     background-size: cover;
-    gap: 5rem;
+    gap: 4.5rem;
+    font-family: 'Titillium Web', Helvetica, sans-serif;
 }
 
 .search-container {
@@ -34,7 +35,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 20px;
+    border: 1px solid;
+    flex-wrap: wrap;
+    text-wrap: wrap;
+}
+
+.cityName {
+    font-family: 'Roboto Mono';
+    font-size: 2rem;
+    margin: -0.5rem
+}
+
+.cityTemp {
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: -0.1rem;
+    margin-bottom: -0.5rem;
+}
+
+.cityDescrip {
+    font-size: 1.3rem;
+    font-style: oblique;
+    margin-bottom: -.5rem;
+    text-wrap: wrap;
+}
+
+.cityFeel {
+    font-size: 1.5rem;
+    font-weight: 5.5rem;
 }

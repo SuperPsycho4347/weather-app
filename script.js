@@ -23,22 +23,28 @@ function displayData(weatherObject) {
     console.log('hello');
     // Location element creation
     const location = weatherObject.weatherAddress;
-    const locH3 = document.createElement('h3');
+    const locH3 = document.createElement('p');
     locH3.textContent = location;
+    locH3.classList.add('cityName')
     // Temp element creation
     const tempH1 = document.createElement('h1');
     tempH1.textContent = weatherObject.weatherTemp + " °F";
+    tempH1.classList.add('cityTemp')
     // Description element creation
     const descripP = document.createElement('p');
     descripP.textContent = weatherObject.weatherDescrip;
+    descripP.classList.add('cityDescrip')
     // Feels like element creation
     const feelsP = document.createElement('p');
     feelsP.textContent = "Feels like " + weatherObject.weatherFeel + " °F";
+    feelsP.classList.add('cityFeel')
     // Appending to parent div
     weatherCard.appendChild(locH3)
     weatherCard.appendChild(tempH1);
     weatherCard.appendChild(descripP);
     weatherCard.appendChild(feelsP);
+    // Applying color to parent div
+    weatherCard.style.backgroundColor = 'white'
 }
 
 // Constructor for usableData object
