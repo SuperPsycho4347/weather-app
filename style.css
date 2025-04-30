@@ -4,6 +4,7 @@ body {
     align-items: center;
     background-image: url("/img/pexels-pixabay-209831.jpg");
     background-size: cover;
+    gap: 5rem;
 }
 
 .search-container {
@@ -29,4 +30,11 @@ body {
     background-color: white;
 }
 
-.weather-card {}
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 20px;
+}
