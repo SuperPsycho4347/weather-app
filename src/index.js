@@ -1,3 +1,6 @@
+// Imports
+import "./styles.css";
+
 // Variable declarations
 const searchBar = document.querySelector('.search');
 const submitBtn = document.querySelector('.submit');
